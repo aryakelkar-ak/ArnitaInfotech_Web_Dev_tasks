@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-Speciality Hospital</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Multi-Speciality Hospital</h1>
+        <p>Comprehensive Care for All Your Health Needs</p>
+        <button onclick="window.location.href='#book'">Book Appointment</button>
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#specialities">Specialities</a>
+        <a href="#book">Book Appointment</a>
+        <a href="admin.html">Admin Login</a>
+    </nav>
+    <section id="home">
+        <h2>Welcome</h2>
+        <p>Explore our super specialities and book appointments easily.</p>
+    </section>
+    <section id="specialities">
+        <h2>Super Specialities</h2>
+        <div class="speciality-list">
+            <div class="speciality">Cardiology</div>
+            <div class="speciality">Neurology</div>
+            <div class="speciality">Oncology</div>
+            <div class="speciality">Orthopedics</div>
+            <div class="speciality">Gastroenterology</div>
+            <div class="speciality">Nephrology</div>
+            <div class="speciality">Urology</div>
+            <div class="speciality">Endocrinology</div>
+            <div class="speciality">Pulmonology</div>
+            <div class="speciality">Dermatology</div>
+        </div>
+    </section>
+    <section id="book">
+        <h2>Book an Appointment</h2>
+        <form id="appointmentForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            <label for="speciality">Speciality:</label>
+            <select id="speciality" required>
+                <option value="">Select Speciality</option>
+                <option value="Cardiology">Cardiology</option>
+                <option value="Neurology">Neurology</option>
+                <option value="Oncology">Oncology</option>
+                <option value="Orthopedics">Orthopedics</option>
+                <option value="Gastroenterology">Gastroenterology</option>
+                <option value="Nephrology">Nephrology</option>
+                <option value="Urology">Urology</option>
+                <option value="Endocrinology">Endocrinology</option>
+                <option value="Pulmonology">Pulmonology</option>
+                <option value="Dermatology">Dermatology</option>
+            </select>
+            <label for="date">Date (Mon-Sat only):</label>
+            <input type="date" id="date" required>
+            <label for="time">Time Slot:</label>
+            <select id="time" required>
+                <option value="">Select Time</option>
+                <option value="9:00 AM">9:00 AM</option>
+                <option value="10:00 AM">10:00 AM</option>
+                <option value="11:00 AM">11:00 AM</option>
+                <option value="2:00 PM">2:00 PM</option>
+                <option value="3:00 PM">3:00 PM</option>
+                <option value="4:00 PM">4:00 PM</option>
+            </select>
+            <button type="submit">Book Appointment</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2023 Multi-Speciality Hospital</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
